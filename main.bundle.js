@@ -1,9 +1,9 @@
-webpackJsonp([1,4],{
+webpackJsonp([2,4],{
 
-/***/ 135:
+/***/ 139:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(27)();
+exports = module.exports = __webpack_require__(21)();
 // imports
 
 
@@ -18,10 +18,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 136:
+/***/ 140:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(27)();
+exports = module.exports = __webpack_require__(21)();
 // imports
 
 
@@ -36,29 +36,29 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 137:
+/***/ 142:
 /***/ (function(module, exports) {
 
 module.exports = "<h1>\n  {{title}}\n</h1>\n<app-highlight-table></app-highlight-table>\n"
 
 /***/ }),
 
-/***/ 138:
+/***/ 143:
 /***/ (function(module, exports) {
 
-module.exports = "<h3>\n  highlight-table works!\n</h3>\n<style>\n  .container {\n    display: flex;\n  }\n\n  .stuart {\n    flex: 1;\n    flex-direction: row;\n  }\n\n  .shane {\n    align-content: center;\n  }\n</style>\n<!-- <div class=\"container\"> -->\n<!-- <div *ngFor=\"let col of table; let i=index\">\n  <div *ngFor=\"let row of col; let j=index\">\n    <span (mouseover)=\"hover=true\" (mouseleave)=\"hover=false\" [ngStyle]=\"{backgroundColor: hover==true ? 'pink' : 'transparent'}\">{{ row['r' + j + 'c' + i] }}</span>\n  </div>\n</div> -->\n<!-- </div> -->\n<div *ngFor=\"let col of table; let j=index\">\n  <span *ngFor=\"let row of col; let i=index\" (mouseover)=\"hover=true\" (mouseleave)=\"hover=false\" [ngStyle]=\"{backgroundColor: hover==true ? 'lightblue' : 'transparent'}\">{{ row['r' + j + 'c' + i] }}\n  </span>\n</div>\n<!-- <div>\n  <span [ngStyle]=\"{backgroundColor: hover==true ? 'lightgrey':'grey'}\">hello {{ hover }}</span>\n</div> -->\n"
+module.exports = "<h3>\n  highlight-table works!\n</h3>\n<style>\n  .container {\n    display: flex;\n  }\n\n  .stuart {\n    flex: 1;\n    flex-direction: row;\n  }\n\n  .shane {\n    align-content: center;\n  }\n</style>\n<!-- <div class=\"container\"> -->\n<!-- <div *ngFor=\"let col of table; let i=index\">\n  <div *ngFor=\"let row of col; let j=index\">\n    <span (mouseover)=\"hover=true\" (mouseleave)=\"hover=false\" [ngStyle]=\"{backgroundColor: hover==true ? 'pink' : 'transparent'}\">{{ row['r' + j + 'c' + i] }}</span>\n  </div>\n</div> -->\n<!-- </div> -->\n<div class=\"container\">\n  <div class=\"row\">\n    <div *ngFor=\"let col of table; let j=index\">\n      <div class=\"col-md-2\" *ngFor=\"let row of col; let i=index\" (mouseover)=\"columni=i; rowj=j\" (mouseleave)=\"hover=false\" [ngStyle]=\"{backgroundColor: rowj!=j && columni!=i ?'transparent' : 'lightblue'; backgroundColor: j==0 ?'transparent' : 'lightblue'}\">\n        {{ row['r' + j + 'c' + i] }}\n      </div>\n    </div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <!-- row: {{ rowj }}; column: {{ columni }} -->\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
-/***/ 163:
+/***/ 171:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(71);
+module.exports = __webpack_require__(73);
 
 
 /***/ }),
 
-/***/ 70:
+/***/ 72:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -67,20 +67,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 70;
+webpackEmptyContext.id = 72;
 
 
 /***/ }),
 
-/***/ 71:
+/***/ 73:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(84);
 
 
 
@@ -93,7 +93,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 78:
+/***/ 81:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -115,8 +115,8 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Component */])({
         selector: 'app-root',
-        template: __webpack_require__(137),
-        styles: [__webpack_require__(135)]
+        template: __webpack_require__(142),
+        styles: [__webpack_require__(139)]
     })
 ], AppComponent);
 
@@ -124,16 +124,16 @@ AppComponent = __decorate([
 
 /***/ }),
 
-/***/ 79:
+/***/ 82:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__highlight_table_highlight_table_component__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__highlight_table_highlight_table_component__ = __webpack_require__(83);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -172,7 +172,7 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 80:
+/***/ 83:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -194,8 +194,8 @@ var HighlightTableComponent = (function () {
         this.cols = [];
         this.cell = null;
         this.key = null;
-        this.rowslength = 2;
-        this.columnslength = 2;
+        this.rowslength = 6;
+        this.columnslength = 6;
         this.makeTable();
     }
     HighlightTableComponent.prototype.ngOnInit = function () {
@@ -227,8 +227,8 @@ var HighlightTableComponent = (function () {
 HighlightTableComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Component */])({
         selector: 'app-highlight-table',
-        template: __webpack_require__(138),
-        styles: [__webpack_require__(136)]
+        template: __webpack_require__(143),
+        styles: [__webpack_require__(140)]
     }),
     __metadata("design:paramtypes", [])
 ], HighlightTableComponent);
@@ -237,7 +237,7 @@ HighlightTableComponent = __decorate([
 
 /***/ }),
 
-/***/ 81:
+/***/ 84:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -254,5 +254,5 @@ var environment = {
 
 /***/ })
 
-},[163]);
+},[171]);
 //# sourceMappingURL=main.bundle.js.map
