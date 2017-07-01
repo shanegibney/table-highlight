@@ -15,8 +15,8 @@ export class HighlightTableComponent implements OnInit {
   r:number;
   p:number;
   key: string = null;
-  rowslength:number = 2;
-  columnslength:number = 2;
+  rowslength:number = 6;
+  columnslength:number = 6;
 
   constructor() {
     this.makeTable();

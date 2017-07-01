@@ -22,10 +22,17 @@
   </div>
 </div> -->
 <!-- </div> -->
-<div *ngFor="let col of table; let j=index">
-  <span *ngFor="let row of col; let i=index" (mouseover)="hover=true" (mouseleave)="hover=false" [ngStyle]="{backgroundColor: hover==true ? 'lightblue' : 'transparent'}">{{ row['r' + j + 'c' + i] }}
-  </span>
+<div class="container">
+  <div class="row">
+    <div *ngFor="let col of table; let j=index">
+      <div class="col-md-2" *ngFor="let row of col; let i=index" (mouseover)="columni=i; rowj=j" (mouseleave)="hover=false" [ngStyle]="{backgroundColor: rowj!=j && columni!=i ?'transparent' : 'lightblue'; backgroundColor: j==0 ?'transparent' : 'lightblue'}">
+        {{ row['r' + j + 'c' + i] }}
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <!-- row: {{ rowj }}; column: {{ columni }} -->
+    </div>
+  </div>
 </div>
-<!-- <div>
-  <span [ngStyle]="{backgroundColor: hover==true ? 'lightgrey':'grey'}">hello {{ hover }}</span>
-</div> -->
