@@ -1,0 +1,31 @@
+<h3>
+  highlight-table works!
+</h3>
+<style>
+  .container {
+    display: flex;
+  }
+
+  .stuart {
+    flex: 1;
+    flex-direction: row;
+  }
+
+  .shane {
+    align-content: center;
+  }
+</style>
+<!-- <div class="container"> -->
+<!-- <div *ngFor="let col of table; let i=index">
+  <div *ngFor="let row of col; let j=index">
+    <span (mouseover)="hover=true" (mouseleave)="hover=false" [ngStyle]="{backgroundColor: hover==true ? 'pink' : 'transparent'}">{{ row['r' + j + 'c' + i] }}</span>
+  </div>
+</div> -->
+<!-- </div> -->
+<div *ngFor="let col of table; let j=index">
+  <span *ngFor="let row of col; let i=index" (mouseover)="hover=true" (mouseleave)="hover=false" [ngStyle]="{backgroundColor: hover==true ? 'lightblue' : 'transparent'}">{{ row['r' + j + 'c' + i] }}
+  </span>
+</div>
+<!-- <div>
+  <span [ngStyle]="{backgroundColor: hover==true ? 'lightgrey':'grey'}">hello {{ hover }}</span>
+</div> -->

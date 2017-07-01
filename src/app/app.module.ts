@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { HighlightTableComponent } from './highlight-table/highlight-table.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HighlightTableComponent
   ],
   imports: [
     BrowserModule,
