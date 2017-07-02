@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./table2.component.css']
 })
 export class Table2Component implements OnInit {
-  num1: number;
-  num2: number;
+  rowj: number;
+  columni: number;
   table: {}[] = [];
   cols: {}[]= [];
   cell: {}= null;
