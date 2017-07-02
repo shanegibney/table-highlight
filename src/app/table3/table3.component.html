@@ -1,0 +1,11 @@
+<h3>
+  Table 3:
+</h3>
+<h4>On mouseover highlight whole row and column <small>(row:{{ rowj }}, column:{{ columni}})</small></h4>
+<div class="row panel panel-default">
+  <div class="col-md-2" *ngFor="let col of table; let j=index">
+    <div *ngFor="let row of col; let i=index" (mouseover)="columni=i; rowj=j" [ngStyle]="{'backgroundColor': (rowj==j) || (columni==i) ? 'silver':'transparent', 'font-weight': (j==0 || i==0) || (rowj==j && columni==i) ? 'bold' : 'normal', 'color': (j==rowj && i==0) || (i==columni && j==0) ? 'teal':'black', 'text-align':'center'}">
+      row:{{ i }}, col:{{ j }}
+    </div>
+  </div>
+</div>

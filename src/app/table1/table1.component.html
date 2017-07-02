@@ -1,7 +1,8 @@
 <h3>
-  highlight-table works!
+  Table 1:
 </h3>
-<div class="row">
+<h4>On mouseover highlight single cell from top and left <small>(row:{{ rowj }}, column:{{ columni}})</small></h4>
+<div class="row panel panel-default">
   <div class="col-md-2" *ngFor="let col of table; let j=index">
     <div *ngFor="let row of col; let i=index" (mouseover)="columni=i; rowj=j" [ngStyle]="{'backgroundColor': (rowj!=j && columni!=i) || (rowj<j) || (columni<i) ? 'transparent':'silver', 'font-weight': (j==0 || i==0) || (rowj==j && columni==i) ? 'bold' : 'normal', 'color': (j==rowj && i==0) || (i==columni && j==0) ? 'teal':'black', 'text-align':'center'}">
       row:{{ i }}, col:{{ j }}

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-highlight-table',
-  templateUrl: './highlight-table.component.html',
-  styleUrls: ['./highlight-table.component.css']
+  selector: 'app-table4',
+  templateUrl: './table4.component.html',
+  styleUrls: ['./table4.component.css']
 })
-export class HighlightTableComponent implements OnInit {
+export class Table4Component implements OnInit {
   num1: number;
   num2: number;
   table: {}[] = [];
@@ -13,7 +13,6 @@ export class HighlightTableComponent implements OnInit {
   cell: {}= null;
   c:number;
   r:number;
-  p:number;
   key: string = null;
   rowslength:number = 6;
   columnslength:number = 6;
@@ -36,4 +35,4 @@ export class HighlightTableComponent implements OnInit {
             this.cols = [];
         }
       }
-}
+  }
